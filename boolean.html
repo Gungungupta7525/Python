@@ -1,0 +1,86 @@
+<!Doctype html>
+<head>
+<link rel="stylesheet" href="hello.css"></head>
+<body>
+<h1>Boolean Values In Python</h1>
+<p>
+In programming you often need to know if an expression is True or False.
+
+<br><br>
+When you compare two values, the expression is evaluated and Python returns the Boolean answer:</p>
+<b>Example:-</b>
+<p class="box">
+print(10 > 9)
+print(10 == 9)
+print(10 < 9) 
+<br><br>Output:
+True<br>
+False<br>
+False
+<p>When you run a condition in an if statement, Python returns True or False:</p>
+<b>Example:-</b>
+<p class="box"> a = 200
+b = 33<br><br>
+<br>
+if b > a:
+  &nbsp;print("b is greater than a")<br>
+else:<br>
+  print("b is not greater than a") 
+</p>
+
+
+
+<b>Example</b>
+<p class="box">
+Evaluate two variables:<br>
+x = "Hello"<br>
+y = 15
+<br>
+print(bool(x))<br>
+print(bool(y))<br>
+bool(["apple", "cherry", "banana"])
+<br><br>
+<b>Output:-</b>
+<br>
+True<br>
+True<br>
+True
+
+</p>
+<h2>Some Values are False</h2>
+<p>
+In fact, there are not many values that evaluate to False, except empty values, such as (), [], {}, "", the number 0, and the value None. And of course the value False evaluates to False.</p>
+<b>Example:-</b>
+<p class="box">
+The following will return False:<br>
+bool(False)<br>
+bool(None)<br>
+bool(0)<br>
+bool("")<br>
+bool(())<br>
+bool([])<br>
+bool({}) <br>
+</p>
+
+
+<h3>Functions can Return a Boolean</h3>
+<p>
+You can create functions that returns a Boolean Value:</p>
+<b>Example:-</b>
+<p class="box">
+Print the answer of a function:<br>
+def myFunction() :
+  return True
+
+print(myFunction()) </p>
+
+<p>Python also has many built-in functions that return a boolean value, like the isinstance() function, which can be used to determine if an object is of a certain data type:
+</p>
+<b>Example:-</b>
+<p class="box">
+Check if an object is an integer or not:<br>
+x = 200<br>
+print(isinstance(x, int)) <br>
+
+</p>
+</body>

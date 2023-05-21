@@ -1,0 +1,285 @@
+<!Doctype html>
+<head>
+<link rel="stylesheet" href="hello.css"></head>
+<body>
+<h1>Python Strings</h1>
+<p>
+Strings in python are surrounded by either single quotation marks, or double quotation marks.
+
+'hello' is the same as "hello"</p>
+<h2>Assign String to a Variable</h2>
+<p>
+Assigning a string to a variable is done with the variable name followed by an equal sign and the string:-</p>
+<b>Example:</b>
+<p class="box">
+a = "Hello"<br>
+print(a) </p>
+<h2>Multiline Strings</h2>
+<p>
+You can assign a multiline string to a variable by using three quotes:-</p>
+<b>Example:</b>
+<p class="box">
+
+You can use three double quotes or three Single quotes:<br><br>
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+."""<br><br>
+print(a) 
+</p>
+<h2>Strings as Arrays</h2>
+<p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+<br><br>
+
+Square brackets can be used to access elements of the string.</p>
+<b>Example:</b>
+<p class="box">
+Get the character at position 1 , the first character has the position 0:<br><br>
+a = "Hello, World!"<br>
+print(a[1])</p>
+<h2>String Length</h2>
+<p>
+To get the length of a string, use the len() function.</p>
+<b>Example:</b>
+<p class="box">
+The len() function returns the length of a string:<br><br>
+a = "Hello, World!"<br>
+print(len(a))</p>
+
+<h2>Check String</h2>
+<p>
+To check if a certain phrase or character is present in a string, we can use the keyword in.</p>
+<b>Example:</b>
+<p class="box">
+Check if "free" is present in the following text:<br><br>
+txt = "The best things in life are free!"<br>
+print("free" in txt)<br>
+</p>
+<h2>Check if NOT</h2>
+<p>
+To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
+</p><b>Example:</b>
+<p class="box">
+
+print only if "expensive" is NOT present:<br>
+txt = "The best things in life are free!"<br><br>
+if "expensive" not in txt:<br>
+  print("No, 'expensive' is NOT present.")
+</p>
+<br>
+<h2>Slicing</h2>
+
+<p>
+You can return a range of characters by using the slice syntax.<br><br>
+
+Specify the start index and the end index, separated by a colon, to return a part of the string.
+<br>
+The first character has index 0.
+</p>
+<b>Example:</b>
+<p class="box">
+
+
+Get the characters from position 2 to position 5 (not included):<br>
+b = "Hello, World!"<br>
+print(b[2:5])</p>
+<p>
+<h2>Slice From the Start</h2>
+<p>
+By leaving out the start index, the range will start at the first character:<br>
+<b>Get the characters from the start to position 5 (not included):</b></p>
+<p><b>Example:</b>
+<p class="box">
+
+b = "Hello, World!"<br>
+print(b[:5])</p>
+
+<h2>Slice To the End</h2>
+<p>
+By leaving out the end index, the range will go to the end:</p>
+<p class="box">
+Example<br><br>
+
+Get the characters from position 2, and all the way to the end:<br>
+b = "Hello, World!"<br>
+print(b[2:])</p>
+
+
+<h2>Negative Indexing</h2>
+<p>
+Use negative indexes to start the slice from the end of the string:<br><br>
+<b>Get the characters:</b>
+<br>
+From: "o" in "World!" (position -5)
+<br>
+To, but not included: "d" in "World!" (position -2):<br>
+b = "Hello, World!"<br></p>
+<b>Example:</b>
+<p class="box">
+
+print(b[-5:-2])
+
+</p>
+<h2>Upper Case Method </h2>
+<p>The upper() method returns the string in upper case:
+</p>
+<b>Example:</b>
+<p class="box"> a = "Hello, World!"<br>
+print(a.upper())</p>
+
+<h2>Lower Case</h2>
+<p>The lower() method returns the string in lower case:</p>
+<b>Example:</b>
+<p class="box">a = "Hello, World!"<br>
+print(a.lower())</p>
+
+<h2>Remove Whitespace</h2>
+<p>The strip() method removes any whitespace from the beginning or the end:</p>
+<b>Example:</b>
+<p class="box">
+a = " Hello, World! "<br><br>
+print(a.strip()) &nbsp;<br># returns "Hello, World!" 
+</p>
+
+<h2>Replace String</h2>
+<b>Example</b>
+<p>
+The replace() method replaces a string with another string:</p>
+<p class="box">
+a = "Hello, World!"<br>
+print(a.replace("H", "J"))</p>
+
+<h2>Split String</h2>
+<p>
+The split() method returns a list where the text between the specified separator becomes the list items.</p>
+<p>
+The split() method splits the string into substrings if it finds instances of the separator:</p>
+<b>Example:-</b>
+
+<p class="box">
+a = "Hello, World!"<br>
+print(a.split(",")) # returns ['Hello', ' World!'] </p>
+
+
+<h1>String Concatenation</h1>
+<p>To concatenate, or combine, two strings you can use the + operator.</p>
+<p>To add a space between them, add a " ":</p>
+<b>example:-</b>
+<p>Merge variable a with variable b into variable c:</p>
+<p class="box">a = "Hello"
+b = "World"
+c = a + b
+print(c)</p>
+
+<b>Example</b>
+<p >
+To add a space between them, add a " ":</p>
+<p class="box">
+a = "Hello"<br>
+b = "World"<br>
+c = a + " " + b<br>
+print(c)
+
+</p>
+<h2>String Format</h2>
+<p>we can combine strings and numbers by using the format() method!
+<br><br>
+The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are:</p>
+
+<p>Use the format() method to insert numbers into strings:</p>
+<b>example:</b>
+<p class="box">
+age = 36<br>
+txt = "My name is John, and I am {}"<br>
+print(txt.format(age))<br>
+<b>Output:</b>
+My name is John, and I am 36 </p>
+<p>
+You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:</p>
+<b>Example:-</b>
+<p>
+quantity = 3<br>
+itemno = 567<br>
+price = 49.95<br>
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."<br>
+print(myorder.format(quantity, itemno, price))</p>
+<h2>Escape Character</h2>
+<p>
+To insert characters that are illegal in a string, use an escape character.
+<br><br>
+An escape character is a backslash \ followed by the character you want to insert.
+<br><br>
+An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+</p>
+<b>Example</b>
+<p>
+
+You will get an error if you use double quotes inside a string that is surrounded by double quotes:</p>
+<p class="try">txt = "We are the so-called "Vikings" from the north."</p>
+<p>To fix this problem, use the escape character \":
+<b>Example:</b>
+<br><br>
+
+The escape character allows you to use double quotes when you normally would not be allowed:</p>
+<p class="box">txt =We "are the so called-Vikings \"from\" the north body."
+</p>
+<br><br>
+<h2>Escape Characters in python</h3>
+<table>
+  <tr>
+    <th>Character</th>
+    <th>Meaning</th>
+   
+  </tr>
+  <tr>
+    <td>\' 	</td>
+    <td>Single Quote</td>
+   
+  </tr>
+  <tr>
+    <td>\\</td>
+    <td>BackSlash</td>
+   
+  </tr>
+  <tr>
+    <td>\n</td>
+    <td> 	New Line</td>
+ 
+  </tr>
+  <tr>
+    <td>\r/td>
+    <td> 	Carriage Return</td>
+   
+  </tr>
+  <tr>
+    <td>\t</td>
+    <td> 	Tab</td>
+   
+  </tr>
+  <tr>
+    <td>\b</td>
+    <td>Backspace</td>
+  
+  </tr>
+   <tr>
+    <td>\f</td>
+    <td> Form Feed</td>
+   
+  </tr>
+  <tr>
+    <td>\ooo</td>
+    <td> 	Octal value</td>
+  
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+

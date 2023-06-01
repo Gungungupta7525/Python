@@ -1,0 +1,302 @@
+<!Doctype html>
+<head>
+<link rel="stylesheet" href="hello.css"></head>
+<div id="nav_bar" class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+
+      </ul>
+<div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="hello.html">Variables</a>
+      <a href="data.html">Data Types</a>
+      <a href="string.html">Strings In Python </a>
+      <a href="boolean.html">Booleans</a>
+      <a href="operators.html">Operators</a>
+      <a href="list.html">Lists</a>
+      <a href="tuples.html">Tuples</a>
+      <a href="sets.html">Sets</a>
+      <a href="Dictionary.html">Dictionary</a>
+
+    </div>
+  </div> 
+    </div>
+<body>
+<h1>Tuples</h1>
+<p>Tuples are used to store multiple items in a single variable.<br><br>
+A tuple is a collection which is ordered and <i>unchangeable</i>.
+<br><br>
+Tuples are written with round brackets.
+</p>
+<b>Example:-</b>
+<p>
+
+Create a Tuple:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry")<br>
+print(thistuple)</p>
+
+<h2>Tuple Items</h2>
+<p>
+Tuple items are ordered, unchangeable, and allow duplicate values.
+
+Tuple items are indexed, the first item has index [0], the second item has index [1] etc.
+<br><br>
+
+When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+Unchangeable
+<br><br>
+Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</p>
+<h2>Allow Duplicates</h2>
+
+Since tuples are indexed, they can have items with the same value:
+<b>Example:-</b>
+<p>
+Tuples allow duplicate values:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")<br>
+print(thistuple)
+</p>
+<h2>Tuple Length</h2>
+<p>
+To determine how many items a tuple has, use the len() function:
+<b>Example:-</b>
+
+Print the number of items in the tuple:</p><p class="box">
+thistuple = ("apple", "banana", "cherry")<br><br>
+print(len(thistuple))</p>
+<h2>type()</h2>
+<p>
+From Python's perspective, tuples are defined as objects with the data type 'tuple':</p>
+<b>Example:-</b>
+<p>
+What is the data type of a tuple?</p>
+<p class="box2">
+
+
+mytuple = ("apple", "banana", "cherry")<br>
+print(type(mytuple))</p>
+
+
+<h2>The tuple() Constructor</h2>
+<p>
+It is also possible to use the tuple() constructor to make a tuple.<br><br>
+<b>Example:-</b>
+
+Using the tuple() method to make a tuple:</p>
+<p class="box2">
+thistuple = tuple(("apple", "banana", "cherry")) &nbsp;# note the double round-brackets<br>
+print(thistuple)</p>
+<h2>Access Tuple Items</h2>
+<p>You can access tuple items by referring to the index number, inside square brackets:<br><br>
+<b>Example:-</b>
+<br>
+
+Print the second item in the tuple:</p>
+<p class="box">
+tuple = ("apple", "banana", "cherry")<br>
+print(tuple[1])
+
+</p>
+<h2>Negative Indexing</h2>
+<p>
+Negative indexing means start from the end.
+
+-1 refers to the last item, -2 refers to the second last item etc.<br><br>
+<b>Example:-</b>
+
+Print the last item of the tuple:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry")<br>
+print(thistuple[-1])</p>
+<h2>Range of Indexes</h2>
+<p>
+You can specify a range of indexes by specifying where to start and where to end the range.
+<br>
+When specifying a range, the return value will be a new tuple with the specified items.<br><br>
+<b>Example:-</b>
+
+Return the third, fourth, and fifth item:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")<br>
+print(thistuple[2:5])</p>
+<p>
+Note: The search will start at index 2 (included) and end at index 5 (not included).
+<br><br>
+Remember that the first item has index 0.
+<br><br>
+By leaving out the start value, the range will start at the first item:<br><br>
+<b>Example</b>
+<br>
+This example returns the items from the beginning to, but NOT included, "kiwi":</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")<br>
+print(thistuple[:4])
+</p>
+<p>
+By leaving out the end value, the range will go on to the end of the list:<br><br>
+<b>Example:-</b>
+
+This example returns the items from "cherry" and to the end:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:])</p>
+
+
+<h2>Range of Negative Indexes</h2>
+<p>
+Specify negative indexes if you want to start the search from the end of the tuple:<br><br>
+<b>Example:-</b>
+
+This example returns the items from index -4 (included) to index -1 (excluded)/p>
+<p class="box2">thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")<br>
+print(thistuple[-4:-1])</p>
+<h2>Check if Item Exists</h2>
+<p>
+To determine if a specified item is present in a tuple use the in keyword:<br><br>
+<b>Example:-</b>
+
+Check if "apple" is present in the tuple:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry")<br><br>
+if "apple" in thistuple:<br><br>
+  print("Yes, 'apple' is in the fruits tuple") </p>
+
+<h2>Update Tuples</h2>
+<p>Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created.
+<br><br>
+
+Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+<br><br>
+But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+</p>
+<h2>Add Items</h2>
+<p>
+Since tuples are immutable, they do not have a built-in append() method, but there are other ways to add items to a tuple.<br><br>
+<b>1. Convert into a list:-</b>To add items in a tuple firstly you have to  convert it into a list, add your item(s), and convert it back into a tuple.<br>
+
+</p>
+
+<b>Example:</b>
+<p>
+Convert the tuple into a list, add "orange", and convert it back into a tuple:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry")<br><br>
+y = list(thistuple)<br><br>
+y.append("orange")<br><br>
+thistuple = tuple(y)
+</p>
+<b>2. Add tuple to a tuple:-</b><p> You are allowed to add tuples to tuples, so if you want to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple:</p>
+<b>Example:</b>
+<p>
+Create a new tuple with the value "orange", and add that tuple:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry")<br><br>
+y = ("orange",)<br><br>
+thistuple += y
+<br><br>
+print(thistuple)
+</p>
+<h2>Remove Items From A Tuple</h2>
+<p>Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for changing and adding tuple items:<br><br>
+<b>Example:-</b>
+
+Convert the tuple into a list, remove "apple", and convert it back into a tuple:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry")<br><br>
+y = list(thistuple)<br><br>
+y.remove("apple")<br><br>
+thistuple = tuple(y)</p>
+<p><i>Or you can delete the tuple completely:</i></p>
+<b>Example:-</b>
+<p>
+The del keyword can delete the tuple completely:</p>
+<p class="box2">
+thistuple = ("apple", "banana", "cherry")<br><br>
+del thistuple<br><br>
+print(thistuple)&nbsp; &nbsp; #this will raise an error because the tuple no longer exists 
+</p>
+<h2>Unpacking a Tuple</h2>
+<p>
+When we create a tuple, we normally assign values to it. This is called "packing" a tuple:<br><br>
+<b>Example:-</b>
+
+Packing a tuple:</p><p class="box2">
+fruits = ("apple", "banana", "cherry")</p>
+<p>But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking":</p>
+<b>Example:-</b>
+<p>
+Unpacking a tuple:</p>
+<p class="box2">
+fruits = ("apple", "banana", "cherry")
+<br><br>
+(green, yellow, red) = fruits
+<br><br>
+print(green)<br>
+print(yellow)<br>
+print(red)<br><br>
+<b>Output:-</b><br><br>
+apple<br>
+banana<br>
+cherry
+</p>
+<br><br>
+<p style="background-color:  #fabb70
+ ;"><b>Note:-</b> The number of variables must match the number of values in the tuple, if not, you must use an asterisk to collect the remaining values as a list.</p>
+ <h2>Using Asterisk*</h2>
+<p>
+If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list:<br><br>
+<b>Example:-</b>
+<br><br>
+Assign the rest of the values as a list called "red":</p>
+<p class="box2">
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")<br><br>
+
+(green, yellow, *red) = fruits
+<br><br>
+print(green)
+print(yellow)
+print(red)
+</p>
+<p>
+If the asterisk is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left.<br><br>
+<b>Example</b>
+<br><br>
+Add a list of values the "tropic" variable:</p>
+<p class="box2">
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+<br><br>
+(green, *tropic, red) = fruits
+<br><br>
+print(green)
+print(tropic)
+print(red)</p>
+<h2>Join Two Tuples</h2>
+<p>To join two or more tuples you can use the + operator:<br><br>
+<b>Example:-</b>
+<br><br>
+
+Join two tuples:</p>
+<p class="box">
+tuple1 = ("a", "b" , "c")<br>
+tuple2 = (1, 2, 3)
+<br><br>
+tuple3 = tuple1 + tuple2<br>
+print(tuple3)</p>
+<h2>Multiply Tuples</h2>
+<p>
+If you want to multiply the content of a tuple a given number of times, you can use the * operator:<br><br>
+<b>Example:-</b>
+
+Multiply the fruits tuple by 2:</p>
+<p class="box2">
+fruits = ("apple", "banana", "cherry")<br>
+mytuple = fruits * 2<br>
+<br><br>
+print(mytuple) </p>
+<button class="button-89" role="button"><a href="list.html">Previous</a></button>
+<button class="button-89" role="button" style="float:right;"><a href="sets.html">Next-></a></button>
+</body>

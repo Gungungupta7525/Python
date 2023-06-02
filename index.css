@@ -47,7 +47,7 @@ h1{
   top: 0;
   bottom: 10;
   background-color: #008080;
-  height: 60px;
+  height: 50px;
   width:100%;
   position: fixed;
   border-bottom: 2px solid #4d4d4d;
@@ -70,7 +70,7 @@ h1{
   position: RELATIVE;
   text-decoration: none;
   color: white;
-  line-height: 40px;
+  line-height: 30px;
  font-size:30px;
 }
 
@@ -106,10 +106,10 @@ h1{
   border: none;
   outline: none;
   color: white;
-  padding: 5px 10px;
+  padding: -5px 10px;
   background-color: inherit;
   font-family: inherit;
-  margin: 10;
+  margin: 0px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -120,7 +120,7 @@ h1{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }

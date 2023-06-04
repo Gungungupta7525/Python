@@ -23,7 +23,7 @@ h1{
 @media(max-width:800px);
     float: right;
     margin-right:40%;
-    width: 100%;
+    max-width: 100%;
     height: 100px;
     opacity: 2;
     

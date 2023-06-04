@@ -42,11 +42,11 @@ h1{
 
 
 
-
 .navbar {
   top: 0;
   bottom: 10;
-  background-color: #008080;
+  background-color:#008080
+  ;
   height: 50px;
   width:100%;
   position: fixed;
@@ -106,7 +106,7 @@ h1{
   border: none;
   outline: none;
   color: white;
-  padding: -5px 10px;
+  padding: 0px 10px;
   background-color: inherit;
   font-family: inherit;
   margin: 0px;
@@ -120,7 +120,7 @@ h1{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 100px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -142,16 +142,12 @@ h1{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*<!-- HTML !-->
-<button class="button-89" role="button">Button 89</button>*/
-
-/* CSS */
 a{
 font-size:30px;
 color:green;
 }
 .button-89 {
-  --b: 3px;   /* border thickness */
+  --b: 0.3rem;   /* border thickness */
   --s: .45em; /* size of the corner */
   --color: #373B44;
   
@@ -164,7 +160,7 @@ color:green;
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: .6em;
-  font-size: 16px;
+  font-size: 1.6rem;
 
   border: 0;
 
@@ -175,7 +171,7 @@ color:green;
 
 .button-89:hover,
 .button-89:focus-visible{
-  --_p: 0px;
+  --_p: 0rem;
   outline-color: var(--color);
   outline-offset: .05em;
 }
